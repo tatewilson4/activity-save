@@ -50,6 +50,10 @@
     text-align: center;
 }
 
+body {
+    background-color: #C96567;
+}
+
 
 .fadein {
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
