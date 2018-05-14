@@ -12,4 +12,4 @@ Users- Used to login to your account if you created one.
 
 I used Node.js, Mongoose, Express and Angular2.
 
-Future Upgrades - We would like to get the functionality 100%. As if right now the entire backend is working, but for some reason the id is not being tracked on the front end. So the update delete and show route are not working on the actual page. Also need to fix heroku deployment. 
+Future Upgrades - I would like to get the functionality 100%. As if right now the entire backend is working, but for some reason the id is not being tracked on the front end. So the update delete and show route are not working on the actual page. Also need to fix heroku deployment. 
