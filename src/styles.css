@@ -6,8 +6,43 @@
     color: red;
 }
 
-.navbar {
+.home {
+    float: left;
+    list-style-type: none;
+}
 
+.login {
+    float: right;
+    list-style-type: none;
+}
+
+.register {
+    float: right;
+    list-style-type: none;
+}
+
+.dashboard {
+    float: right;
+    list-style-type: none;
+}
+
+.logout {
+    float: right;
+    list-style-type: none;
+}
+
+.create {
+    float: right;
+    list-style-type: none;
+}
+
+.account {
+    float: right;
+    list-style-type: none;
+}
+
+.navbar {
+    background-color: #314455
 }
 
 

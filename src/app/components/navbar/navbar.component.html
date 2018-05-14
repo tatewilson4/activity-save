@@ -1,17 +1,17 @@
 <nav class="navbar navbar-expand-md navbar-primary bg-primary">
   <div class="container">
-    <a class="navbar-brand" routerLink="/">MEAN Auth App</a>
+    <a class="navbar-brand" routerLink="/">Active</a>
     <div class="navbar-collapse">
       <ul class="navbar-nav mr-auto">
-        <li><a class="btn" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"routerLink="/">Home</a></li>
+        <li class="home"><a class="btn" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"routerLink="/">Home</a></li>
       </ul>
       <div class="form-inline">
-        <li><a class="btn" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/dashboard">Dashboard</a></li>
-        <li><a class="btn" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/activityCreate">Create</a></li>
-        <li><a class="btn" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/profile">Account</a></li>
-        <li><a class="btn" *ngIf="!authService.loggedIn()" routerLinkActive="active" routerLink="/login">Login</a></li>
-        <li><a class="btn" *ngIf="!authService.loggedIn()" routerLinkActive="active" routerLink="/register">Register</a></li>
-        <li><a class="btn" *ngIf="authService.loggedIn()" (click)="onLogoutClick()" routerLink="">Logout</a></li>
+        <li class="dashboard"><a class="btn" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/dashboard">Dashboard</a></li>
+        <li class="create"><a class="btn" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/activityCreate">Create</a></li>
+        <li class="account"><a class="btn" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/profile">Account</a></li>
+        <li class="login"><a class="btn" *ngIf="!authService.loggedIn()" routerLinkActive="active" routerLink="/login">Login</a></li>
+        <li class="register"><a class="btn" *ngIf="!authService.loggedIn()" routerLinkActive="active" routerLink="/register">Register</a></li>
+        <li class="logout"><a class="btn" *ngIf="authService.loggedIn()" (click)="onLogoutClick()" routerLink="">Logout</a></li>
       </div>
     </div>
   </div>
