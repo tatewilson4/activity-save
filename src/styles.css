@@ -46,12 +46,44 @@
 }
 
 
+.navbar {
+    background-color: #2D5F5D;
+    opacity: 0.7;
+}
+
+.homeInfo {
+    width: 50%;
+    border: 1px solid red;
+    text-align: center;
+    margin: 0 auto;
+}
+
+input {
+    background-color: #2D5F5D;
+    color: white;
+}
+
+#password {
+    background-color: #2D5F5D;
+    color: white;
+}
+
+#username {
+    background-color: #2D5F5D;
+    color: white;
+}
+
+
 .center {
     text-align: center;
 }
 
 body {
-    background-color: #C96567;
+    background-color: #022140;
+    background-image: url("http://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/02/14093216/Abstract-Transparent-PNG-1024x640.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
