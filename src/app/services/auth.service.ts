@@ -19,7 +19,7 @@ export class AuthService {
   authenticateUser(user) {
     let headers = new HttpHeaders()
     headers = headers.append('Content-Type', 'application/json');
-    return this.http.post('/users/authenticate', user, { headers });
+    return this.http.post('users/authenticate', user, { headers });
   }
 
   getProfile() {
@@ -27,7 +27,7 @@ export class AuthService {
     let headers = new HttpHeaders();
     headers = headers.append('Content-Type', 'application/json');
     headers = headers.append('Authorization', this.authToken);
-    return this.http.get('/users/profile', { headers });
+    return this.http.get('users/profile', { headers });
   }
 
   storeUserData(token, user) {
