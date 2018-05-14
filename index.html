@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="ActivitiesApp">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="/js/app.js" charset="utf-8"></script>
+    </head>
+      <body ng-controller="MainController as ctrl">
+          <h2 class="page-header">Dashboard</h2>
+          <p>Welcome to your dashboard</p>
+          <form ng-submit="ctrl.createActivity()">
+              <input ng-model="ctrl.createForm.title" type="text" placeholder="Title">
+              <input type="submit" value="Create New Activity">
+          </form>
+          <table>
+              <tr ng-repeat="activity in ctrl.activities | orderBy: 'title'">
+                  <td>{activity.title}</td>
+                  <td>{activity.img}</td>
+                  <td>{activity.location}</td>
+                  <td>{activity.description}</td>
+              </tr>
+          </table>
+          <div class="details">
+              <h3>Activity Info</h3>
+              <hr>
+              <h4>{{ctrl.activity.title}}</h4>
+              <h6>{{ctrl.activity.img}}</h6>
+              <h6>{{ctrl.activity.location}}</h6>
+              <p><span> Description: </span> {{ctrl.activity.description}}</p>
+          </div>
+      </body>
+    </div>
+</html>

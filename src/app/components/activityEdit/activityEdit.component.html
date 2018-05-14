@@ -1,0 +1,43 @@
+<div class="fadein">
+    <h1 class="title">Update Book</h1>
+  <div class="columns">
+    <div class="column">
+      <form #activityForm="ngForm" (ngSubmit)="updateTheActivity(activity._id)">
+        <div class="field">
+          <div class="control">
+            <label for="title">Title</label>
+            <input *ngIf="activity" name="title" id="title" [(ngModel)]="activity.title" type="text" class="input">
+            <input *ngIf="!activity" name="title" id="title" type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="img">Image</label>
+            <input *ngIf="activity" name="img" id="img" [(ngModel)]="activity.img" type="text" class="input">
+            <input *ngIf="!activity" name="img" id="img" type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="location">Location</label>
+            <input *ngIf="activity" name="location" id="location" [(ngModel)]="activity.location" type="text" class="input">
+            <input *ngIf="!activity" name="location" id="location" type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="img">Description</label>
+            <input *ngIf="activity" name="description" id="description" [(ngModel)]="activity.description" type="text" class="input">
+            <input *ngIf="!activity" name="description" id="description" type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button class="button is-warning" routerLink="/dashboard"><i class="fas fa-arrow-left"></i>Back</button>
+            <button class="button is-link" type="submit" [disabled]="!activityForm.valid">Update</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

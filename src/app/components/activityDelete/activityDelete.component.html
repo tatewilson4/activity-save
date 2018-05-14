@@ -1,0 +1,20 @@
+<div class="fadein">
+    <section class="hero is-link">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">{{ activity?.title}}</h1>
+                <h1 class="subtitle">{{ activity?.img}}</h1>
+                <h1 class="subtitle">{{ activity?.location}}</h1>
+                <h1 class="subtitle">{{ activity?.description}}</h1>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <button class="button is-warning" routerLink="/"><i class="fas fa-arrow-left"></i>Back</button>
+                <a *ngIf="activity" style="margin: 3px" class="button is-success" [routerLink]="['/activityEdit', activity?._id]"><i class="far fa-edit"></i>Edit</a>
+        <a *ngIf="!activity" style="margin: 3px" class="button is-success"><i class="far fa-edit"></i>Edit</a>
+        <button class="button is-danger" (click)="deleteTheActivity(activity?._id)"><i class="far fa-trash-alt"></i>Delete</button>
+            </div>
+        </div>
+    </section>
+</div>
